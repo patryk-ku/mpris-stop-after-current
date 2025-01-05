@@ -1,0 +1,1 @@
+# mpris-stop-after-current
