@@ -1,8 +1,14 @@
 [package]
 name = "mpris-stop-after-current"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 
 [dependencies]
 tokio = { version = "1.42.0", features = ["time", "macros", "rt", "rt-multi-thread"] }
 mpris = "2.0.1"
+
+[profile.release]
+strip = true
+# optimizations for file size:
+codegen-units = 1
+panic = "abort"
