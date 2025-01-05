@@ -1,0 +1,8 @@
+[package]
+name = "mpris-stop-after-current"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.42.0", features = ["time", "macros", "rt", "rt-multi-thread"] }
+mpris = "2.0.1"
